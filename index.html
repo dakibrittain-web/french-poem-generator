@@ -8,22 +8,27 @@
     <title>AI Poems Generator</title>
 </head>
 <body>
+    <div class="container">
     <header>
-    <h1>Welcome to the French Poems Generator</h1>
+    <h1>AI French Poems Generator</h1>
     </header>
 
     <main>
-        <form>
+        <div class="form-container">
+        <form id="poem-generator-form">
             <input type="text" 
             placeholder="Enter the topic of the poem you would like"
             autofocus
             required 
             autocomplete="off"
+            class="instructions"
+            id="user-instructions"
             />
-            <input type="submit" />
+            <input type="submit" class="submit-button" />
             
         </form>
-        <div>
+        </div>
+        <div class="poem">
             La tombe dit a la rose
             <br />
             Des Pleurs dont l'aube t'arrose
@@ -34,6 +39,9 @@
          
 
     </footer>
+    </div>
+
     <script src="script.js"></script>
+    
 </body>
 </html>
